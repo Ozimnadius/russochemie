@@ -1,0 +1,15 @@
+.menu {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 17px;
+
+  &__item {
+    display: block;
+    margin-bottom: 55px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

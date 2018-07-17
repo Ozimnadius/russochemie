@@ -1,0 +1,15 @@
+.controls {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: 17px;
+
+  display: flex;
+
+  &__item {
+    margin-right: 74px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

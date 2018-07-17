@@ -23,6 +23,7 @@ body {
   height: 100%;
   background: $bg;
   font-family: $font;
+  line-height: 1.42;
   color: $text;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
@@ -33,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
 }
 
 .page {
@@ -49,6 +51,10 @@ body {
 
 .content {
   @include content;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
 }
 
 a {

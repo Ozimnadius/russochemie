@@ -1,6 +1,6 @@
 //variables
 //fonts
-$font: 'Open Sans', Arial, sans-serif;
+$font: 'Exo 2', Arial, sans-serif;
 
 //colors
 $White: #fefefe;
@@ -17,6 +17,7 @@ $Dark-gray: #adadad;
 $Dim-gray: #707070;
 $Dark-gray2: #aeaeae;
 $Dark-green: #052826;
+$Verdigris: #45b9b9;
 $Snow: #fafafa;
 $Manatee2: #959595;
 $Old-lace: #fdf4e3;
@@ -42,8 +43,16 @@ $font-size: 16px;
 //sections
 /*------------------------SECTION-HEADER----------------*/
 @import "sections/_header";
+/*-----------------SECTION-MENU--------------------*/
+@import "sections/_menu";
+/*-----------------SECTION-CONTROLS--------------------*/
+@import "sections/_controls";
+/*-----------------SECTION-MAIN--------------------*/
+@import "sections/_main";
 /*------------------------SECTION-FOOTER---------------------*/
 @import "sections/_footer";
+/*-----------------SECTION-SOCIALS--------------------*/
+@import "sections/_socials";
 
 
 .debug {

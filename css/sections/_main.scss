@@ -1,0 +1,138 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  min-height: auto;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  padding: 88px 0 100px 0;
+
+  .container {
+    height: 100%;
+  }
+
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+
+  }
+
+  &__filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    &-left {
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 50%;
+      background-color: rgba($Black, 0.7);
+    }
+    &-right {
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      background-color: rgba($Black, 0.5);
+    }
+
+  }
+
+  &__container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
+  &__title {
+    color: $bg;
+    font-size: 74px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    color: $Medium-turquoise;
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  &__hr {
+    display: flex;
+    margin-bottom: 40px;
+
+    &-line {
+      width: 120px;
+      height: 3px;
+      background-color: $bg;
+      margin-right: 13px;
+    }
+    &-point {
+      width: 3px;
+      height: 3px;
+      background-color: $bg;
+    }
+  }
+
+  &__list {
+    position: relative;
+  }
+
+  &__slide {
+
+    &-title {
+      color: $bg;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      color: $Pastel-gray;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+  }
+
+  &__prev, &__next {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    //transform: translateY(-50%);
+  }
+  &__prev {
+    left: 0;
+  }
+  &__next {
+    right: 0;
+  }
+
+  .footer {
+    padding-left: 180px;
+  }
+}
