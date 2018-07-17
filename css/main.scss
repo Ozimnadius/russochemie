@@ -1,0 +1,53 @@
+//variables
+//fonts
+$font: 'Open Sans', Arial, sans-serif;
+
+//colors
+$White: #fefefe;
+$Ash-grey: #b7b7b7;
+$bg: #ffffff;
+$Dark-jungle-green: #222222;
+$Taupe: #333333;
+$Taupe-gray: #888888;
+$Pastel-gray: #cccccc;
+$Manatee: #999999;
+$Black: #000000;
+$Medium-turquoise: #4ecdc4;
+$Dark-gray: #adadad;
+$Dim-gray: #707070;
+$Dark-gray2: #aeaeae;
+$Dark-green: #052826;
+$Snow: #fafafa;
+$Manatee2: #959595;
+$Old-lace: #fdf4e3;
+$text: #646464;
+
+//another
+$font-size: 16px;
+
+//layout
+/*-----------------SECTION-MIXINS--------------------*/
+@import "layout/_mixins";
+/*------------------------SECTION-FONTS----------------*/
+@import "layout/_fonts";
+/*------------------------SECTION-SMART-GRID----------------*/
+@import "layout/_smart-grid";
+/*------------------------SECTION-ADJUSTMENT----------------*/
+@import "layout/_adjustment";
+/*-----------------SECTION-HOVER-ANIM--------------------*/
+@import "layout/_hover-anim";
+/*------------------------SECTION-COMMON----------------*/
+@import "layout/_common";
+
+//sections
+/*------------------------SECTION-HEADER----------------*/
+@import "sections/_header";
+/*------------------------SECTION-FOOTER---------------------*/
+@import "sections/_footer";
+
+
+.debug {
+  //@include debug(rgba(0,0,0,0.3), 1px solid red);
+  //z-index: 100;
+  //top: 0;
+}
