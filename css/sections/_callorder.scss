@@ -1,0 +1,116 @@
+.callorder {
+  position: fixed;
+  z-index: 100;
+  right: -999px;
+  top: 0;
+  bottom: 0;
+  width: 480px;
+  background-color: $Dark-green;
+  padding: 100px 75px;
+  transition: .5s;
+
+  &.active {
+    right: 0;
+  }
+
+  &__controls {
+    position: relative;
+    margin-bottom: 25px;
+    .controls {
+      position: static;
+    }
+  }
+
+  &__hr {
+    height: 1px;
+    background-color: rgba($bg, .1);
+    border: none;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 55px;
+
+    &-text {
+      color: $Manatee;
+      font-weight: 700;
+    }
+  }
+  &__phone {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $bg;
+  }
+
+  &__questions {
+    margin-bottom: 30px;
+    &-title {
+      color: $bg;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    &-text {
+      color: $Pastel-gray;
+      line-height: 24px;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__form {
+
+  }
+
+  &__fields {
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba($bg, 0.8);
+    padding: 8px 15px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    color: $Medium-turquoise;
+
+    &::placeholder {
+      color: $Medium-turquoise;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__submit {
+    text-align: right;
+
+    &-button {
+      color: $Medium-turquoise;
+      font-size: 20px;
+      font-weight: 700;
+
+
+      &:after {
+        content: url(/images/icons/hmenu-arrow.png);
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+}

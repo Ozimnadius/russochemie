@@ -53,6 +53,18 @@ body {
   @include content;
 }
 
+img {
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }

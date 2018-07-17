@@ -38,7 +38,7 @@
 
             <!-- aside -->
             <aside class="menu">
-                <a href="#" class="menu__item">
+                <a href="#" class="menu__item jsMenu">
                     <img src="images/icons/menu.png" alt="" class="menu__img">
                 </a>
                 <a href="#" class="menu__item">
@@ -89,7 +89,7 @@
 
             <!-- controls -->
             <div class="controls">
-                <a href="" class="controls__item">
+                <a href="" class="controls__item jsCallorder">
                     <img src="images/icons/telephone.png" class="controls__item-img">
                 </a>
                 <a href="" class="controls__item">
@@ -255,8 +255,134 @@
 
 </div>
 
+<!-- hidden-menu -->
+<div class="hmenu">
+    <div class="hmenu__wrapper">
+        <button class="hmenu__close jsMenu">
+            <img src="images/icons/close.png" alt="" class="hmenu__close-img">
+        </button>
+        <hr class="hmenu__hr">
+        <div class="hmenu__list">
+            <a href="/" class="hmenu__item active">
+                Главная
+            </a>
+            <a href="/" class="hmenu__item">
+                Каталог
+            </a>
+            <a href="/" class="hmenu__item">
+                Новости
+            </a>
+            <a href="/" class="hmenu__item">
+                Статьи и рецептуры
+            </a>
+            <a href="/" class="hmenu__item">
+                Карьера
+            </a>
+            <a href="/" class="hmenu__item">
+                О компании
+            </a>
+            <a href="/" class="hmenu__item">
+                Отзывы
+            </a>
+            <a href="/" class="hmenu__item">
+                Наши Лица
+            </a>
+            <a href="/" class="hmenu__item">
+                Контакты
+            </a>
+            <a href="/" class="hmenu__item">
+                Политика
+                конфиденциальности
+            </a>
 
+        </div>
+    </div>
 </div>
+<!-- END hidden-menu -->
+
+<!-- callorder -->
+<div class="callorder">
+    <div class="callorder__controls">
+        <!-- controls -->
+        <div class="controls">
+            <a href="" class="controls__item">
+                <img src="images/icons/telephone.png" class="controls__item-img">
+            </a>
+            <a href="" class="controls__item">
+                <img src="images/icons/social.png" class="controls__item-img">
+            </a>
+            <a href="" class="controls__item">
+                <img src="images/icons/search.png" class="controls__item-img">
+            </a>
+            <button class="controls__item jsCallorder">
+                <img src="images/icons/cancel.png" alt="" class="hmenu__close-img">
+            </button>
+        </div>
+        <!-- END controls -->
+    </div>
+
+    <!-- hr -->
+    <hr class="callorder__hr">
+    <!-- END hr -->
+
+    <!-- contacts -->
+    <div class="callorder__contacts">
+        <a href="tel:8(800)505-13-52  " class="callorder__phone">
+            8 (800) 505-13-52
+        </a>
+        <div class="callorder__contacts-text">
+            Контакты
+        </div>
+    </div>
+    <!-- END contacts -->
+
+    <!-- questions -->
+    <div class="callorder__questions">
+        <div class="callorder__questions-title">
+            У Вас появились вопросы?
+        </div>
+        <div class="callorder__questions-text">
+            Заполните форму и мы свяжемся с Вами в ближайщеее время (выберите способ связи и заполните необходимое поле)
+        </div>
+        <div class="callorder__questions-text callorder__questions-text_white">
+            Для отправления заявки необходимо заполнить хотя бы одно поле контактов (номер телефона или e-mail)
+        </div>
+    </div>
+    <!-- END questions -->
+
+    <!-- form -->
+    <form action="" method="post" class="callorder__form">
+
+        <div class="callorder__fields">
+            <input type="text" name="name" class="callorder__input" placeholder="Ваше имя">
+            <input type="tel" name="tel" class="callorder__input" placeholder="Номер телефона">
+            <input type="email" name="email" class="callorder__input" placeholder="E-mail">
+        </div>
+
+        <div class="accept">
+            <input type="checkbox" id="callAccept" name="acept" class="accept__check" checked>
+            <label for="callAccept" class="accept__label">
+                            <span class="accept__left">
+                                <span class="accept__fake"></span>
+                            </span>
+                <span class="accept__right">
+                                - Я даю согласие на обработку
+                                моих персональных данных
+                            </span>
+            </label>
+        </div>
+
+        <div class="callorder__submit">
+            <button class="callorder__submit-button">
+                Отправить
+            </button>
+        </div>
+
+
+    </form>
+    <!-- END form -->
+</div>
+<!-- END callorder -->
 
 <div class="debug">
     <div>

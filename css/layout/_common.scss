@@ -1,3 +1,42 @@
-.button {
+.accept {
+  width: 260px;
+  margin-bottom: 55px;
 
+  &__check {
+    display: none;
+
+    &:checked + .accept__label .accept__fake:after {
+      display: block;
+    }
+  }
+
+  &__left {
+    margin-right: 9px;
+  }
+  &__label {
+    display: flex;
+    color: $Manatee;
+    line-height: 20px;
+  }
+  &__fake {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid $Medium-turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:after {
+      display: none;
+      content: '';
+      width: 10px;
+      height: 7px;
+      margin-bottom: 4px;
+      border-bottom: 1px solid $Medium-turquoise;
+      border-left: 1px solid $Medium-turquoise;
+      transform: rotate(-45deg);
+    }
+  }
 }

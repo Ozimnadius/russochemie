@@ -1,5 +1,6 @@
 .main {
-  width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh;
   height: 100vh;
   min-height: auto;
   overflow: hidden;
@@ -137,3 +138,4 @@
     padding-left: 180px;
   }
 }
+
