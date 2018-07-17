@@ -25,5 +25,20 @@ $(function () {
 
         $('.callorder').toggleClass('active');
     });
+
+    $('body').on('change', '.accept__check', function () {
+
+        var check = $(this),
+            checked = check.prop('checked'),
+            form = check.closest('form'),
+            button = form.find('[type=submit]');
+
+        if (checked) {
+            button.removeClass('disabled');
+        } else {
+            button.addClass('disabled');
+        }
+
+    });
     /*END OTHER*/
 });

@@ -125,6 +125,7 @@
     position: absolute;
     top: 0;
     cursor: pointer;
+    outline: none;
     //transform: translateY(-50%);
   }
   &__prev {
@@ -135,7 +136,7 @@
   }
 
   .footer {
-    padding-left: 180px;
+    padding-left: 80px;
   }
 }
 

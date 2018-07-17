@@ -507,6 +507,7 @@ a {
   padding: 8px 15px;
   width: 100%;
   margin-bottom: 30px;
+  outline: none;
   color: #4ecdc4;
 }
 
@@ -538,6 +539,14 @@ a {
   color: #4ecdc4;
   font-size: 20px;
   font-weight: 700;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.callorder__submit-button.disabled {
+  pointer-events: none;
+  opacity: .5;
 }
 
 .callorder__submit-button:after {
@@ -683,6 +692,7 @@ a {
   position: absolute;
   top: 0;
   cursor: pointer;
+  outline: none;
 }
 
 .main__prev {
@@ -694,7 +704,7 @@ a {
 }
 
 .main .footer {
-  padding-left: 180px;
+  padding-left: 80px;
 }
 
 /*------------------------SECTION-FOOTER---------------------*/

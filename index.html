@@ -225,9 +225,9 @@
                 <a href="#" class="subscription">
                     подпишитесь на новости
                 </a>
-                <div class="privacy">
+                <a href="#" class="privacy">
                     Политика конфиденциальности
-                </div>
+                </a>
             </footer>
             <!--END footer-->
 
@@ -355,8 +355,8 @@
 
         <div class="callorder__fields">
             <input type="text" name="name" class="callorder__input" placeholder="Ваше имя">
-            <input type="tel" name="tel" class="callorder__input" placeholder="Номер телефона">
-            <input type="email" name="email" class="callorder__input" placeholder="E-mail">
+            <input type="tel" name="tel" class="callorder__input" placeholder="Номер телефона" required>
+            <input type="email" name="email" class="callorder__input" placeholder="E-mail" required>
         </div>
 
         <div class="accept">
@@ -373,7 +373,7 @@
         </div>
 
         <div class="callorder__submit">
-            <button class="callorder__submit-button">
+            <button type="submit" class="callorder__submit-button">
                 Отправить
             </button>
         </div>
