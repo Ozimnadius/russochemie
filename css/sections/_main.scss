@@ -1,9 +1,11 @@
 .main {
-  max-width: 100vw;
-  max-height: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  //max-width: 100vw;
+  //max-height: 100vh;
+  //height: 100vh;
   min-height: auto;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
   display: block;
   padding: 88px 0 100px 0;
@@ -127,12 +129,31 @@
     cursor: pointer;
     outline: none;
     //transform: translateY(-50%);
+
+    &.swiper-button-disabled {
+      svg {
+        fill: $Taupe-gray;
+      }
+    }
+
+    &:hover {
+      svg {
+        fill: rgba($bg, .7);
+      }
+    }
   }
   &__prev {
     left: 0;
   }
   &__next {
     right: 0;
+  }
+
+  &__svg {
+    width: 75px;
+    height: 18px;
+    fill: $bg;
+    transition: .3s;
   }
 
   .footer {

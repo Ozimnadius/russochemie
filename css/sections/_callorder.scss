@@ -18,6 +18,27 @@
     margin-bottom: 25px;
     .controls {
       position: static;
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        margin-right: 0;
+        transition: .3s;
+
+        &:hover {
+          opacity: .7;
+        }
+
+        &.disabled {
+          opacity: .3;
+        }
+
+        &_close {
+          svg {
+            fill: $bg;
+          }
+        }
+      }
     }
   }
 

@@ -8,8 +8,15 @@
 
   &__item {
     margin-right: 74px;
+    display: inline-block;
     &:last-child {
       margin-right: 0;
+    }
+
+    &-svg {
+      width: 34px;
+      height: 34px;
+      fill: $Medium-turquoise;
     }
   }
 }

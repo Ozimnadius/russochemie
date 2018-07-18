@@ -4,6 +4,29 @@
   justify-content: space-between;
   align-items: center;
 
+  &_abs {
+    padding-top: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .menu {
+      position: static;
+    }
+    .controls {
+      position: static;
+    }
+  }
+
 
   &__logo {
     color: $bg;

@@ -23,243 +23,393 @@
 </head>
 <body>
 
-<div class="wrapper wrapper_main main"
-     style="background: url(images/bg/bg-main.jpg) 0 0 no-repeat; background-size: cover;">
-    <!-- filter -->
-    <div class="main__filter">
-        <img class="main__filter-img" src="images/bg/bg-main-logo.png" alt="">
-        <div class="main__filter-left"></div>
-        <div class="main__filter-right"></div>
-    </div>
-    <!-- END filter -->
-
-    <div class="container">
-        <div class="main__wrapper">
-
-            <!-- aside -->
-            <aside class="menu">
-                <a href="#" class="menu__item jsMenu">
-                    <img src="images/icons/menu.png" alt="" class="menu__img">
-                </a>
-                <a href="#" class="menu__item">
-                    <img src="images/icons/catalog.png" alt="" class="menu__img">
-                </a>
-                <a href="#" class="menu__item">
-                    <img src="images/icons/construct.png" alt="" class="menu__img">
-                </a>
-                <a href="#" class="menu__item">
-                    <img src="images/icons/pin.png" alt="" class="menu__img">
-                </a>
-
-            </aside>
-            <!-- END aside -->
-
-            <!--header-->
-            <header class="header">
-                <div class="main__container">
-                    <div class="main__header">
-                        <!-- logo -->
-                        <a href="" class="header__logo">
-                            R&D центр
-                        </a>
-                        <!-- END logo -->
-
-                        <!-- nav -->
-                        <nav class="header__nav nav">
-
-                            <a href="" class="nav__item">
-                                Каталог
-                            </a>
-                            <a href="" class="nav__item">
-                                Новости
-                            </a>
-                            <a href="" class="nav__item">
-                                Статьи и рецепты
-                            </a>
-                            <a href="" class="nav__item">
-                                О компании
-                            </a>
-
-                        </nav>
-                        <!-- END nav -->
+<div class="swiper">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrapper main"
+                     style="background: url(images/bg/bg-main.jpg) 0 0 no-repeat; background-size: cover;">
+                    <!-- filter -->
+                    <div class="main__filter">
+                        <img class="main__filter-img" src="images/bg/bg-main-logo.png" alt="">
+                        <div class="main__filter-left"></div>
+                        <div class="main__filter-right"></div>
                     </div>
-                </div>
-            </header>
-            <!--END header-->
+                    <!-- END filter -->
 
-            <!-- controls -->
-            <div class="controls">
-                <a href="" class="controls__item jsCallorder">
-                    <img src="images/icons/telephone.png" class="controls__item-img">
-                </a>
-                <a href="" class="controls__item">
-                    <img src="images/icons/social.png" class="controls__item-img">
-                </a>
-                <a href="" class="controls__item">
-                    <img src="images/icons/search.png" class="controls__item-img">
-                </a>
+                    <div class="container">
+                        <div class="main__wrapper">
+
+                            <!-- aside -->
+                            <aside class="menu">
+                                <a href="#" class="menu__item jsMenu">
+                                    <img src="images/icons/menu.png" alt="" class="menu__img">
+                                </a>
+                                <a href="catalog.html" class="menu__item">
+                                    <img src="images/icons/catalog.png" alt="" class="menu__img">
+                                </a>
+                                <a href="#" class="menu__item">
+                                    <img src="images/icons/construct.png" alt="" class="menu__img">
+                                </a>
+                                <a href="#" class="menu__item">
+                                    <img src="images/icons/pin.png" alt="" class="menu__img">
+                                </a>
+                            </aside>
+                            <!-- END aside -->
+
+                            <!--header-->
+                            <header class="header">
+                                <div class="main__container">
+                                    <div class="main__header">
+                                        <!-- logo -->
+                                        <a href="" class="header__logo">
+                                            R&D центр
+                                        </a>
+                                        <!-- END logo -->
+
+                                        <!-- nav -->
+                                        <nav class="header__nav nav">
+
+                                            <a href="" class="nav__item">
+                                                Каталог
+                                            </a>
+                                            <a href="" class="nav__item">
+                                                Новости
+                                            </a>
+                                            <a href="" class="nav__item">
+                                                Статьи и рецепты
+                                            </a>
+                                            <a href="" class="nav__item">
+                                                О компании
+                                            </a>
+
+                                        </nav>
+                                        <!-- END nav -->
+                                    </div>
+                                </div>
+                            </header>
+                            <!--END header-->
+
+                            <!-- controls -->
+                            <div class="controls">
+                                <a href="" class="controls__item jsCallorder">
+                                    <svg class="controls__item-svg" viewBox="0 0 482.6 482.6">
+                                        <use xlink:href="images/icons/sprite.svg#001-telephone"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="controls__item">
+                                    <svg class="controls__item-svg" viewBox="0 0 513.323 513.323">
+                                        <use xlink:href="images/icons/sprite.svg#003-social"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="controls__item">
+                                    <svg class="controls__item-svg" viewBox="0 0 52.966 52.966">
+                                        <use xlink:href="images/icons/sprite.svg#002-search"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- END controls -->
+
+                            <!-- content -->
+                            <section class="main__content">
+                                <div class="main__container">
+                                    <h1 class="main__title">
+                                        Russo Chemie
+                                    </h1>
+                                    <h3 class="main__subtitle">
+                                        Cырье для косметики и бытовой химии
+                                    </h3>
+
+                                    <div class="main__hr">
+                                        <div class="main__hr-line"></div>
+                                        <div class="main__hr-point"></div>
+                                    </div>
+                                </div>
+                                <div class="main__list">
+                                    <div class="main__container">
+                                        <!-- swiper -->
+                                        <div class="swiper-container main__swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide main__slide">
+                                                    <div class="main__slide-title">
+                                                        Опыт / 01
+                                                    </div>
+
+                                                    <div class="main__slide-text">
+                                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                                        модернизировать текущие рецептуры – обращайтесь к нам
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END swiper -->
+                                    </div>
+
+                                    <!-- swiper nav -->
+                                    <button class="main__prev">
+                                        <svg class="main__svg" viewBox="0 0 75 18">
+                                            <use xlink:href="images/icons/sprite.svg#prev"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="main__next">
+                                        <svg class="main__svg" viewBox="0 0 75 18">
+                                            <use xlink:href="images/icons/sprite.svg#next"></use>
+                                        </svg>
+                                    </button>
+                                    <!-- END swiper nav -->
+
+                                </div>
+
+                            </section>
+                            <!-- END content -->
+
+                            <!--footer-->
+                            <footer class="footer">
+                                <a href="#" class="subscription">
+                                    подпишитесь на новости
+                                </a>
+                                <a href="#" class="privacy">
+                                    Политика конфиденциальности
+                                </a>
+                            </footer>
+                            <!--END footer-->
+
+                            <!-- socials -->
+                            <div class="socials">
+                                <a href="" class="socials__item">
+                                    <img src="images/icons/vk.png" alt="" class="socials__img">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="images/icons/tw.png" alt="" class="socials__img">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="images/icons/instagram.png" alt="" class="socials__img">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="images/icons/en.png" alt="" class="socials__img">
+                                </a>
+
+                            </div>
+                            <!-- END socials -->
+
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-            <!-- END controls -->
+            <div class="swiper-slide">
+                <div class="wrapper catalog">
 
-            <!-- content -->
-            <section class="main__content">
-                <div class="main__container">
-                    <h1 class="main__title">
-                        Russo Chemie
-                    </h1>
-                    <h3 class="main__subtitle">
-                        Cырье для косметики и бытовой химии
-                    </h3>
+                    <!--header-->
+                    <header class="header header_abs">
+                        <div class="container">
+                            <div class="header__wrapper">
+                                <!-- aside -->
+                                <aside class="menu">
+                                    <a href="#" class="menu__item jsMenu">
+                                        <img src="images/icons/menu.png" alt="" class="menu__img">
+                                    </a>
+                                </aside>
+                                <!-- END aside -->
 
-                    <div class="main__hr">
-                        <div class="main__hr-line"></div>
-                        <div class="main__hr-point"></div>
-                    </div>
-                </div>
-                <div class="main__list">
-                    <div class="main__container">
-                        <!-- swiper -->
-                        <div class="swiper-container main__swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
+                                <!-- controls -->
+                                <div class="controls">
+                                    <a href="" class="controls__item jsCallorder">
+                                        <svg class="controls__item-svg" viewBox="0 0 482.6 482.6">
+                                            <use xlink:href="images/icons/sprite.svg#001-telephone"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="controls__item">
+                                        <svg class="controls__item-svg" viewBox="0 0 513.323 513.323">
+                                            <use xlink:href="images/icons/sprite.svg#003-social"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="controls__item">
+                                        <svg class="controls__item-svg" viewBox="0 0 52.966 52.966">
+                                            <use xlink:href="images/icons/sprite.svg#002-search"></use>
+                                        </svg>
+                                    </a>
                                 </div>
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
-                                </div>
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
-                                </div>
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
-                                </div>
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
-                                </div>
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
-                                </div>
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
-                                </div>
-                                <div class="swiper-slide main__slide">
-                                    <div class="main__slide-title">
-                                        Опыт / 01
-                                    </div>
-
-                                    <div class="main__slide-text">
-                                        Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
-                                        модернизировать текущие рецептуры – обращайтесь к нам
-                                    </div>
-                                </div>
+                                <!-- END controls -->
                             </div>
                         </div>
-                        <!-- END swiper -->
-                    </div>
+                    </header>
+                    <!--END header-->
 
-                    <!-- swiper nav -->
-                    <div class="main__prev">
-                        <img src="images/icons/prev.png" alt="" class="main__img">
-                    </div>
-                    <div class="main__next">
-                        <img src="images/icons/next.png" alt="" class="main__img">
-                    </div>
-                    <!-- END swiper nav -->
+                    <div class="catalog__list">
+                        <a href="" class="catalog__item" style="background: url(/images/content/catalog1.jpg) 0 0 no-repeat; background-size: cover;">
+                            <div class="catalog__item-filter"></div>
 
+                            <div class="catalog__item-content">
+                                <div class="catalog__item-title">
+                                    СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+                                </div>
+                                <div class="catalog__item-hr">
+                                    <div class="catalog__item-line"></div>
+                                    <div class="catalog__item-point"></div>
+                                </div>
+
+                                <div class="catalog__item-text">
+                                    ОТОБРАНО ПРОФЕССИОНАЛАМИ
+                                </div>
+
+                                <div class="catalog__item-link">
+                                    Перейти
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="" class="catalog__item" style="background: url(/images/content/catalog2.jpg) 0 0 no-repeat; background-size: cover;">
+                            <div class="catalog__item-filter"></div>
+
+                            <div class="catalog__item-content">
+                                <div class="catalog__item-title">
+                                    СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+                                </div>
+                                <div class="catalog__item-hr">
+                                    <div class="catalog__item-line"></div>
+                                    <div class="catalog__item-point"></div>
+                                </div>
+
+                                <div class="catalog__item-text">
+                                    ОТОБРАНО ПРОФЕССИОНАЛАМИ
+                                </div>
+
+                                <div class="catalog__item-link">
+                                    Перейти
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="" class="catalog__item" style="background: url(/images/content/catalog3.jpg) 0 0 no-repeat; background-size: cover;">
+                            <div class="catalog__item-filter"></div>
+
+                            <div class="catalog__item-content">
+                                <div class="catalog__item-title">
+                                    СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+                                </div>
+                                <div class="catalog__item-hr">
+                                    <div class="catalog__item-line"></div>
+                                    <div class="catalog__item-point"></div>
+                                </div>
+
+                                <div class="catalog__item-text">
+                                    ОТОБРАНО ПРОФЕССИОНАЛАМИ
+                                </div>
+
+                                <div class="catalog__item-link">
+                                    Перейти
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="" class="catalog__item" style="background: url(/images/content/catalog4.jpg) 0 0 no-repeat; background-size: cover;">
+                            <div class="catalog__item-filter"></div>
+
+                            <div class="catalog__item-content">
+                                <div class="catalog__item-title">
+                                    СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+                                </div>
+                                <div class="catalog__item-hr">
+                                    <div class="catalog__item-line"></div>
+                                    <div class="catalog__item-point"></div>
+                                </div>
+
+                                <div class="catalog__item-text">
+                                    ОТОБРАНО ПРОФЕССИОНАЛАМИ
+                                </div>
+
+                                <div class="catalog__item-link">
+                                    Перейти
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
                 </div>
-
-            </section>
-            <!-- END content -->
-
-            <!--footer-->
-            <footer class="footer">
-                <a href="#" class="subscription">
-                    подпишитесь на новости
-                </a>
-                <a href="#" class="privacy">
-                    Политика конфиденциальности
-                </a>
-            </footer>
-            <!--END footer-->
-
-            <!-- socials -->
-            <div class="socials">
-                <a href="" class="socials__item">
-                    <img src="images/icons/vk.png" alt="" class="socials__img">
-                </a>
-                <a href="" class="socials__item">
-                    <img src="images/icons/tw.png" alt="" class="socials__img">
-                </a>
-                <a href="" class="socials__item">
-                    <img src="images/icons/instagram.png" alt="" class="socials__img">
-                </a>
-                <a href="" class="socials__item">
-                    <img src="images/icons/en.png" alt="" class="socials__img">
-                </a>
-
             </div>
-            <!-- END socials -->
-
         </div>
     </div>
-
-
 </div>
 
 <!-- hidden-menu -->
 <div class="hmenu">
     <div class="hmenu__wrapper">
         <button class="hmenu__close jsMenu">
-            <img src="images/icons/close.png" alt="" class="hmenu__close-img">
+            <svg class="hmenu__close-svg" viewBox="0 0 512 512">
+                <use xlink:href="images/icons/sprite.svg#close_(1)"></use>
+            </svg>
         </button>
         <hr class="hmenu__hr">
         <div class="hmenu__list">
@@ -305,17 +455,25 @@
     <div class="callorder__controls">
         <!-- controls -->
         <div class="controls">
-            <a href="" class="controls__item">
-                <img src="images/icons/telephone.png" class="controls__item-img">
+            <a href="" class="controls__item jsCallorder">
+                <svg class="controls__item-svg" viewBox="0 0 482.6 482.6">
+                    <use xlink:href="images/icons/sprite.svg#001-telephone"></use>
+                </svg>
             </a>
-            <a href="" class="controls__item">
-                <img src="images/icons/social.png" class="controls__item-img">
+            <a href="" class="controls__item disabled">
+                <svg class="controls__item-svg" viewBox="0 0 513.323 513.323">
+                    <use xlink:href="images/icons/sprite.svg#003-social"></use>
+                </svg>
             </a>
-            <a href="" class="controls__item">
-                <img src="images/icons/search.png" class="controls__item-img">
+            <a href="" class="controls__item disabled">
+                <svg class="controls__item-svg" viewBox="0 0 52.966 52.966">
+                    <use xlink:href="images/icons/sprite.svg#002-search"></use>
+                </svg>
             </a>
-            <button class="controls__item jsCallorder">
-                <img src="images/icons/cancel.png" alt="" class="hmenu__close-img">
+            <button class="controls__item controls__item_close jsCallorder">
+                <svg class="controls__item-svg" viewBox="0 0 512 512">
+                    <use xlink:href="images/icons/sprite.svg#close_(1)"></use>
+                </svg>
             </button>
         </div>
         <!-- END controls -->

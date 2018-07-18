@@ -43,6 +43,8 @@ $font-size: 16px;
 //sections
 /*------------------------SECTION-HEADER----------------*/
 @import "sections/_header";
+/*-----------------SECTION-SWIPER--------------------*/
+@import "sections/_swiper";
 /*-----------------SECTION-MENU--------------------*/
 @import "sections/_menu";
 /*-----------------SECTION-CONTROLS--------------------*/
@@ -51,6 +53,8 @@ $font-size: 16px;
 @import "sections/_callorder";
 /*-----------------SECTION-MAIN--------------------*/
 @import "sections/_main";
+/*-----------------SECTION-CATALOG--------------------*/
+@import "sections/_catalog";
 /*------------------------SECTION-FOOTER---------------------*/
 @import "sections/_footer";
 /*-----------------SECTION-SOCIALS--------------------*/

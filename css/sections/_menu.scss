@@ -31,6 +31,18 @@
 
   &__close {
     margin-bottom: 38px;
+    transition: .3s;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &-svg {
+      width: 20px;
+      height: 20px;
+      fill: $bg;
+      transition: .3s;
+    }
   }
 
   &__hr {

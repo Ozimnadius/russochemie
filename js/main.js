@@ -1,6 +1,16 @@
 $(function () {
 
     /*SWIPER*/
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        speed: 500,
+        mousewheel: true,
+        keyboard: {
+            enabled: true,
+        }
+    });
+
     var mainSwiper = new Swiper('.main__swiper', {
         direction: 'horizontal',
         slidesPerView: 4,
@@ -40,5 +50,27 @@ $(function () {
         }
 
     });
+
+    $('body').on('click', function (e) {
+
+        var item = $(e.target);
+
+        if (item.closest('.hmenu').length == 0 && item.closest('.jsMenu').length == 0) {
+            $('.hmenu').removeClass('active');
+        }
+
+        if (item.closest('.callorder').length == 0 && item.closest('.jsCallorder').length == 0) {
+            $('.callorder').removeClass('active');
+        }
+
+
+
+    });
+
+    // $('.catalog__item').on('mouseover', function (e) {
+    //     $(this).animate({
+    //         width: '27%'
+    //     }, 500);
+    // });
     /*END OTHER*/
 });

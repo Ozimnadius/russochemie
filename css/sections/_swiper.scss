@@ -1,0 +1,19 @@
+.swiper {
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  min-height: auto;
+  position: relative;
+  //overflow: hidden;
+
+  &-container {
+    height: 100%;
+  }
+  &-wrapper {
+    height: 100%;
+  }
+  &-slide {
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
