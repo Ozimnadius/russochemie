@@ -1,0 +1,104 @@
+.const {
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* left */
+  &__left {
+    @include col;
+    @include size(9.1);
+  }
+
+  &__title {
+    color: $bg;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__hr {
+    display: flex;
+    margin-bottom: 35px;
+
+    &-line {
+      width: 120px;
+      height: 3px;
+      background-color: rgba($bg, .5);
+      margin-right: 13px;
+    }
+    &-point {
+      width: 3px;
+      height: 3px;
+      background-color: rgba($bg, .5);
+    }
+  }
+
+  &__text {
+    color: $Pastel-gray;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  /* END left */
+
+  /* right */
+  &__right {
+    @include col;
+    @include offset-left(2.9);
+    @include size(12);
+
+    position: relative;
+    padding-left: 127px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__explanation {
+    color: $Pastel-gray;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 7.63px;
+    transform: rotate(-90deg);
+
+    position: absolute;
+    top: 150px;
+    left: -155px;
+
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-arrow {
+      margin-right: 80px;
+      svg {
+        width: 68px;
+        height: 16px;
+        fill: $Medium-turquoise;
+      }
+    }
+
+  }
+
+  &__next {
+    color: $Medium-turquoise;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  /* END right */
+
+}

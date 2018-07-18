@@ -2,10 +2,13 @@ $(function () {
 
     /*SWIPER*/
 
-    var mySwiper = new Swiper ('.swiper-container', {
+    var swiper = new Swiper ('.swiper__container', {
         direction: 'horizontal',
         speed: 500,
         mousewheel: true,
+        hashNavigation: {
+            watchState: true,
+        },
         keyboard: {
             enabled: true,
         }
@@ -67,10 +70,5 @@ $(function () {
 
     });
 
-    // $('.catalog__item').on('mouseover', function (e) {
-    //     $(this).animate({
-    //         width: '27%'
-    //     }, 500);
-    // });
     /*END OTHER*/
 });

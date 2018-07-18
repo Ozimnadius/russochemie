@@ -24,9 +24,9 @@
 <body>
 
 <div class="swiper">
-    <div class="swiper-container">
+    <div class="swiper-container swiper__container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-hash="slide1">
                 <div class="wrapper main"
                      style="background: url(images/bg/bg-main.jpg) 0 0 no-repeat; background-size: cover;">
                     <!-- filter -->
@@ -45,13 +45,13 @@
                                 <a href="#" class="menu__item jsMenu">
                                     <img src="images/icons/menu.png" alt="" class="menu__img">
                                 </a>
-                                <a href="catalog.html" class="menu__item">
+                                <a href="#slide2" class="menu__item">
                                     <img src="images/icons/catalog.png" alt="" class="menu__img">
                                 </a>
-                                <a href="#" class="menu__item">
+                                <a href="#slide3" class="menu__item">
                                     <img src="images/icons/construct.png" alt="" class="menu__img">
                                 </a>
-                                <a href="#" class="menu__item">
+                                <a href="#slide4" class="menu__item">
                                     <img src="images/icons/pin.png" alt="" class="menu__img">
                                 </a>
                             </aside>
@@ -70,7 +70,7 @@
                                         <!-- nav -->
                                         <nav class="header__nav nav">
 
-                                            <a href="" class="nav__item">
+                                            <a href="#slide2" class="nav__item">
                                                 Каталог
                                             </a>
                                             <a href="" class="nav__item">
@@ -262,13 +262,25 @@
                             </div>
                             <!-- END socials -->
 
+                            <!-- mouse -->
+                            <div class="mouse">
+                                <div class="mouse__prev">
+                                    <img src="images/icons/back.png" alt="">
+                                </div>
+                                <div class="mouse__img">
+                                    <img src="images/icons/mouse.png" alt="">
+                                </div>
+                                <div class="mouse__next">
+                                    <img src="images/icons/back-copy.png" alt="">
+                                </div>
+                            </div>
+                            <!-- END mouse -->
+
                         </div>
                     </div>
-
-
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-hash="slide2">
                 <div class="wrapper catalog">
 
                     <!--header-->
@@ -399,6 +411,116 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-slide" data-hash="slide3">
+                <div class="wrapper const" style="background:url(images/bg/bg-const.jpg)0 0 no-repeat; background-size: cover;">
+
+                    <!--header-->
+                    <header class="header header_abs">
+                        <div class="container">
+                            <div class="header__wrapper">
+                                <!-- aside -->
+                                <aside class="menu">
+                                    <a href="#" class="menu__item jsMenu">
+                                        <img src="images/icons/menu.png" alt="" class="menu__img">
+                                    </a>
+                                </aside>
+                                <!-- END aside -->
+
+                                <!-- controls -->
+                                <div class="controls">
+                                    <a href="" class="controls__item jsCallorder">
+                                        <svg class="controls__item-svg" viewBox="0 0 482.6 482.6">
+                                            <use xlink:href="images/icons/sprite.svg#001-telephone"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="controls__item">
+                                        <svg class="controls__item-svg" viewBox="0 0 513.323 513.323">
+                                            <use xlink:href="images/icons/sprite.svg#003-social"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="controls__item">
+                                        <svg class="controls__item-svg" viewBox="0 0 52.966 52.966">
+                                            <use xlink:href="images/icons/sprite.svg#002-search"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <!-- END controls -->
+                            </div>
+                        </div>
+                    </header>
+                    <!--END header-->
+
+                    <div class="container">
+                        <div class="const__content">
+                            <div class="row">
+                                <!-- left -->
+                                <div class="const__left">
+                                    <h3 class="const__title">
+                                        СОЗДАЙТЕ КОСМЕТИЧЕСКОЕ СРЕДСТВО ПО СОБСТВЕННОЙ РЕЦЕПТУРЕ
+                                    </h3>
+
+                                    <div class="const__hr">
+                                        <div class="const__hr-line"></div>
+                                        <div class="const__hr-point"></div>
+                                    </div>
+
+                                    <div class="const__text">
+                                        Специалисты нашей компании оказывают комплексную информационную и технологическую поддержку по
+                                        созданию уникальных рецептур. В нашем R&D-центре мы разрабатываем, тестируем и оптимизируем
+                                        косметические продукты, учитывая все ваши пожелания: начиная от спектра действия и заканчивая
+                                        финальной ценой. Если вы хотите создать новую линейку, вывести на рынок уникальный продукт или
+                                        модернизировать текущие рецептуры – обращайтесь к нам.
+                                    </div>
+                                </div>
+                                <!-- END left -->
+
+                                <!-- right -->
+                                <div class="const__right">
+                                    <div class="const__explanation">
+                                        выберите компаненты
+                                    </div>
+
+                                    <ul class="const__list">
+                                        <li class="const__item">
+                                            <div class="const__item-arrow">
+                                                <svg viewBox="0 0 75 18">
+                                                    <use xlink:href="images/icons/sprite.svg#next"></use>
+                                                </svg>
+                                            </div>
+                                            <img src="images/content/const1.png" alt="" class="const__item-img">
+                                        </li>
+                                        <li class="const__item">
+                                            <div class="const__item-arrow">
+                                                <svg viewBox="0 0 75 18">
+                                                    <use xlink:href="images/icons/sprite.svg#next"></use>
+                                                </svg>
+                                            </div>
+                                            <img src="images/content/const2.png" alt="" class="const__item-img">
+                                        </li>
+                                        <li class="const__item">
+                                            <div class="const__item-arrow">
+                                                <svg viewBox="0 0 75 18">
+                                                    <use xlink:href="images/icons/sprite.svg#next"></use>
+                                                </svg>
+                                            </div>
+                                            <img src="images/content/const3.png" alt="" class="const__item-img">
+                                        </li>
+
+                                    </ul>
+
+                                    <a href="" class="const__next">
+                                        Перейти к созданию средства
+                                    </a>
+                                </div>
+                                <!-- END right -->
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -413,10 +535,10 @@
         </button>
         <hr class="hmenu__hr">
         <div class="hmenu__list">
-            <a href="/" class="hmenu__item active">
+            <a href="#slide1" class="hmenu__item">
                 Главная
             </a>
-            <a href="/" class="hmenu__item">
+            <a href="#slide2" class="hmenu__item">
                 Каталог
             </a>
             <a href="/" class="hmenu__item">
@@ -437,7 +559,7 @@
             <a href="/" class="hmenu__item">
                 Наши Лица
             </a>
-            <a href="/" class="hmenu__item">
+            <a href="#slide4" class="hmenu__item jsSwiper" data-index="3">
                 Контакты
             </a>
             <a href="/" class="hmenu__item">
