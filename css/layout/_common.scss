@@ -83,10 +83,38 @@
 }
 
 .text{
-  max-width: 735px;
   color: $Pastel-gray;
   font-weight: 600;
   line-height: 28px;
+
+  &__left {
+    @include col;
+    @include size(16);
+  }
+  &__right {
+    @include col;
+    @include size(8);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+.download {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    color: $Medium-turquoise;
+    font-weight: 600;
+    margin-right: 19px;
+  }
+  &__svg {
+    width: 22px;
+    height: 28px;
+    fill: $Medium-turquoise;
+  }
 }
 
 .vendor {

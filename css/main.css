@@ -315,10 +315,57 @@ a {
 }
 
 .text {
-  max-width: 735px;
   color: #cccccc;
   font-weight: 600;
   line-height: 28px;
+}
+
+.text__left {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(66.66667% - 30px);
+}
+
+.text__right {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(33.33333% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.download__title {
+  color: #4ecdc4;
+  font-weight: 600;
+  margin-right: 19px;
+}
+
+.download__svg {
+  width: 22px;
+  height: 28px;
+  fill: #4ecdc4;
 }
 
 .vendor {
@@ -1796,6 +1843,73 @@ a {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+/*-----------------SECTION-MANUFACTURER--------------------*/
+.manufacturer {
+  padding: 75px 0 40px 0;
+}
+
+.manufacturer__subtitle {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.manufacturer__desc {
+  margin-bottom: 70px;
+}
+
+.manufacturer__title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.manufacturer__item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(33.33333% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.manufacturer__item:last-child {
+  margin-bottom: 0;
+}
+
+.manufacturer__item-title {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  background-color: #fafafa;
+  margin-bottom: 15px;
+}
+
+.manufacturer__item-subtitle {
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.manufacturer__item-desc {
+  line-height: 1.25;
 }
 
 /*------------------------SECTION-FOOTER---------------------*/
