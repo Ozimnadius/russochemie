@@ -70,5 +70,38 @@ $(function () {
 
     });
 
+    $('.jsProductsMore').on('click', function (e) {
+
+        var productsButton = $(this),
+            productsMore = $('.jsProductsListMore'),
+            productsMoreButton = $('.jsProductsLess');
+
+        productsButton.removeClass('active');
+        setTimeout(function () {
+            productsMore.slideDown(500, function () {productsMoreButton.addClass('active')});
+        }, 300);
+
+    });
+
+    $('.jsProductsLess').on('click', function (e) {
+
+        var productsMoreButton = $(this),
+            productsMore = $('.jsProductsListMore'),
+            productsButton = $('.jsProductsMore');
+
+        productsMoreButton.removeClass('active');
+        setTimeout(function () {
+            productsMore.slideUp(500, function () {productsButton.addClass('active')});
+        }, 300);
+
+    });
+
+    var productsHeight = $('.products__list').innerHeight()-110;
+
+    $('.products__list2').css({
+        height : productsHeight
+    });
+    // debugger;
+
     /*END OTHER*/
 });

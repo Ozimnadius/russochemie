@@ -14,6 +14,20 @@
     display: block;
   }
 
+  &_3 {
+    padding: 50px 0 90px 0;
+    display: block;
+    .container {
+      position: relative;
+    }
+    .menu {
+      top: 0;
+    }
+    .controls {
+      top: 0;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;

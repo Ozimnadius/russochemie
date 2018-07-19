@@ -128,9 +128,9 @@
     top: 0;
     cursor: pointer;
     outline: none;
-    //transform: translateY(-50%);
 
     &.swiper-button-disabled {
+      pointer-events: none;
       svg {
         fill: $Taupe-gray;
       }

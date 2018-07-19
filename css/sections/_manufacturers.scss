@@ -1,0 +1,160 @@
+.manufacturers {
+
+  .row {
+  }
+
+  &__more {
+    position: absolute;
+    width: 18px;
+    left: 0;
+    top: 75px;
+    bottom: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: $Taupe-gray;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 7.93px;
+
+    opacity: 0;
+    transition: .3s;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &-svg {
+      position: absolute;
+      bottom: 0;
+      margin-right: 80px;
+      width: 19px;
+      fill: $Taupe-gray;
+
+      transform: rotate(-90deg);
+    }
+    &-text {
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 0;
+      left: -185px;
+      top: 180px;
+      width: 390px;
+    }
+  }
+  &__less {
+    position: absolute;
+    width: 18px;
+    height: 440px;
+    left: 0;
+    top: 50%;
+    margin-top: -220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 14px;
+    color: $Taupe-gray;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 7.93px;
+
+    opacity: 0;
+    transition: .3s;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &-svg {
+      position: absolute;
+      top: 0;
+      margin-right: 80px;
+      width: 19px;
+      fill: $Taupe-gray;
+
+      transform: rotate(90deg);
+    }
+    &-text {
+      position: absolute;
+      transform: rotate(-90deg);
+      left: -175px;
+      bottom: 170px;
+      width: 370px;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+
+
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding: 75px 0 30px 0;
+    position: relative;
+  }
+
+  &__list-more {
+    padding: 75px 0 30px 0;
+    position: relative;
+    display: none;
+    border-top: 1px solid rgba($Ash-grey, .3);
+  }
+
+  &__item {
+    @include col;
+    @include size(6);
+    margin-bottom: 35px;
+    display: block;
+
+    &-block{
+      display: block;
+      width: 100%;
+      position: relative;
+
+      border: 1px solid $Ash-grey;
+      background-color: $bg;
+
+      margin-bottom: 20px;
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+
+    &-title {
+      display: block;
+      color: $Taupe;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+  }
+
+}

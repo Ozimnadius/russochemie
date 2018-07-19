@@ -1,0 +1,248 @@
+.products {
+
+  .row {
+    margin-left: -90px;
+    margin-right: -90px;
+  }
+
+  &__more {
+    position: absolute;
+    width: 18px;
+    left: 0;
+    top: 75px;
+    bottom: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: $Taupe-gray;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 7.93px;
+
+    opacity: 0;
+    transition: .3s;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &-svg {
+      position: absolute;
+      bottom: 0;
+      margin-right: 80px;
+      width: 19px;
+      fill: $Taupe-gray;
+
+      transform: rotate(-90deg);
+    }
+    &-text {
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 0;
+      left: -185px;
+      top: 180px;
+      width: 390px;
+    }
+  }
+  &__less {
+    position: absolute;
+    width: 18px;
+    left: 0;
+    top: 75px;
+    bottom: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: $Taupe-gray;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 7.93px;
+
+    opacity: 0;
+    transition: .3s;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &-svg {
+      position: absolute;
+      top: 0;
+      margin-right: 80px;
+      width: 19px;
+      fill: $Taupe-gray;
+
+      transform: rotate(90deg);
+    }
+    &-text {
+      position: absolute;
+      transform: rotate(-90deg);
+      left: -175px;
+      bottom: 170px;
+      width: 370px;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+
+
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding: 75px 0 30px 0;
+    position: relative;
+  }
+
+  &__list-more {
+    padding: 75px 0 30px 0;
+    position: relative;
+    display: none;
+    border-top: 1px solid rgba($Ash-grey, .3);
+  }
+
+  &__item {
+    @include col;
+    @include size(8);
+    margin-left: 90px;
+    margin-right: 90px;
+    word-wrap: break-word;
+    width: calc(33.33333% - 180px);
+    margin-bottom: 45px;
+    position: relative;
+
+    &_drop {
+      .products__item-arrow {
+        svg {
+          width: 11px;
+          height: 12px;
+        }
+      }
+
+      &:hover {
+        .products__list2 {
+          display: block;
+        }
+        .products__item2_dub {
+          cursor: pointer;
+          .products__item2-text {
+            color: $Medium-turquoise;
+          }
+          .products__item2-arrow_pav {
+
+            svg {
+              fill: $Medium-turquoise;
+              transform: rotate(-180deg);
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .products__item-text {
+        color: $Medium-turquoise;
+      }
+      .products__item-arrow {
+        svg {
+          fill: $Medium-turquoise;
+        }
+      }
+    }
+
+    &-link {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-text {
+      color: $Taupe;
+      font-size: 18px;
+      font-weight: 500;
+      transition: .3s;
+      margin-right: 25px;
+    }
+    &-arrow {
+      svg {
+        width: 26px;
+        height: 7px;
+        fill: $Taupe;
+        transition: .3s;
+      }
+    }
+  }
+
+  &__list2 {
+    display: none;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -15px;
+    z-index: 10;
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.1);
+    background-color: $bg;
+    padding: 15px 20px;
+  }
+
+  &__item2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      .products__item2-text {
+        color: $Medium-turquoise;
+      }
+      .products__item2-arrow {
+        svg {
+          fill: $Medium-turquoise;
+        }
+      }
+    }
+
+    &-text {
+      color: $Taupe;
+      font-size: 18px;
+      font-weight: 500;
+      transition: .3s;
+      margin-right: 25px;
+      transition: .3s;
+    }
+    &-arrow {
+      transition: .3s;
+      svg {
+        width: 26px;
+        height: 7px;
+        fill: $Taupe;
+        transition: .3s;
+      }
+
+      &_pav {
+        svg {
+          width: 11px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+}

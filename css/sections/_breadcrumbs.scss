@@ -1,0 +1,14 @@
+.breads {
+  color: $Pastel-gray;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 8.6px;
+  padding-top: 10px;
+  margin-bottom: 90px;
+}
+
+.bread {
+  &.selected {
+    color: $bg;
+  }
+}
