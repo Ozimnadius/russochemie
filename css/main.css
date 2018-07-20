@@ -289,7 +289,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   opacity: .5;
 }
 
@@ -631,11 +631,11 @@ a {
   text-transform: uppercase;
   letter-spacing: 8.6px;
   padding-top: 20px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .breads_product {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .bread.selected {
@@ -1595,7 +1595,7 @@ a {
 }
 
 .products__list {
-  padding: 75px 0 30px 0;
+  padding: 65px 0 30px 0;
   position: relative;
 }
 
@@ -1939,7 +1939,7 @@ a {
 
 /*-----------------SECTION-MANUFACTURER--------------------*/
 .manufacturer {
-  padding: 75px 0 40px 0;
+  padding: 65px 0 40px 0;
 }
 
 .manufacturer__subtitle {
@@ -2144,7 +2144,7 @@ a {
 }
 
 .product__app {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .product__add {
@@ -2156,7 +2156,7 @@ a {
 .product__add-svg {
   width: 34px;
   fill: #4ecdc4;
-  margin-left: 19px;
+  margin-left: 15px;
 }
 
 .product__desc {
@@ -2170,7 +2170,7 @@ a {
 }
 
 .chars {
-  padding-right: 80px;
+  padding-right: 60px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(183, 183, 183, 0.5);
 }
@@ -2182,7 +2182,7 @@ a {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .char:last-child {
@@ -2229,7 +2229,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .app__text {
@@ -2353,7 +2353,7 @@ a {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 8.6px;
-  margin-bottom: 25px;
+  margin-bottom: 3px;
 }
 
 /*-----------------SECTION-SOCIALS--------------------*/

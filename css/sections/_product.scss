@@ -33,7 +33,7 @@
   }
 
   &__app {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   &__add {
@@ -44,7 +44,7 @@
     &-svg {
       width: 34px;
       fill: $Medium-turquoise;
-      margin-left: 19px;
+      margin-left: 15px;
     }
   }
   /* END right */
@@ -57,14 +57,14 @@
 }
 
 .chars {
-  padding-right: 80px;
+  padding-right: 60px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba($Ash-grey, .5);
 }
 .char {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -103,7 +103,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   &__text {
