@@ -13,10 +13,17 @@
       margin-right: 0;
     }
 
+    &:hover {
+      .controls__item-svg {
+        fill: #00ffed;
+      }
+    }
+
     &-svg {
       width: 34px;
       height: 34px;
       fill: $Medium-turquoise;
+      transition: .3s;
     }
   }
 }

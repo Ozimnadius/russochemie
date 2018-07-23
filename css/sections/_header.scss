@@ -64,6 +64,11 @@
   &__item {
     color: $bg;
     margin-right: 50px;
+    transition: .3s;
+
+    &:hover {
+      color: #00ffed;
+    }
 
     &:last-child {
       margin-right: 0;

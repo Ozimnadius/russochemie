@@ -118,16 +118,18 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
   &__item {
     display: flex;
     align-items: center;
-
+    flex-basis: calc(100%/3);
     color: $Taupe;
     font-size: 14px;
     font-weight: 700;
+    padding-right: 30px;
   }
   &__img {
     margin-right: 17px;
