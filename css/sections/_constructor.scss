@@ -98,6 +98,11 @@
     color: $Medium-turquoise;
     font-size: 24px;
     font-weight: 700;
+    transition: .3s;
+
+    &:hover {
+      color: #00ffed;
+    }
   }
   /* END right */
 

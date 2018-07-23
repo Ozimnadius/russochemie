@@ -46,6 +46,11 @@
   &__item {
     display: block;
     margin-bottom: 20px;
+    transition: .3s;
+
+    &:hover {
+      color: $Medium-turquoise;
+    }
     &:last-child {
       margin-bottom: 0;
     }

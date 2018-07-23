@@ -104,16 +104,26 @@
 .download {
   display: flex;
   align-items: center;
+  &:hover {
+    .download__title{
+      color: #00ffed;
+    }
+    .download__svg {
+      fill: #00ffed;
+    }
+  }
 
   &__title {
     color: $Medium-turquoise;
     font-weight: 600;
     margin-right: 19px;
+    transition: .3s;
   }
   &__svg {
     width: 22px;
     height: 28px;
     fill: $Medium-turquoise;
+    transition: .3s;
   }
 }
 

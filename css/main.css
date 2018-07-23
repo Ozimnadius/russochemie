@@ -543,16 +543,30 @@ a {
   align-items: center;
 }
 
+.download:hover .download__title {
+  color: #00ffed;
+}
+
+.download:hover .download__svg {
+  fill: #00ffed;
+}
+
 .download__title {
   color: #4ecdc4;
   font-weight: 600;
   margin-right: 19px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .download__svg {
   width: 22px;
   height: 28px;
   fill: #4ecdc4;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .vendor {
@@ -1358,6 +1372,14 @@ a {
   transition: .5s;
 }
 
+.catalog__item:hover .catalog__item-link {
+  color: #00ffed;
+}
+
+.catalog__item:hover .catalog__item-svg {
+  fill: #00ffed;
+}
+
 .catalog__item:nth-child(1) {
   left: 0;
   right: 75%;
@@ -1440,12 +1462,25 @@ a {
   color: #4ecdc4;
   font-size: 24px;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
-.catalog__item-link:after {
-  content: url(/images/icons/hmenu-arrow.png);
-  display: inline-block;
-  margin-left: 10px;
+.catalog__item-svg {
+  padding-top: 5px;
+  width: 50px;
+  fill: #4ecdc4;
+  margin-left: 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 /*-----------------SECTION-CONSTRUCTOR--------------------*/
@@ -1577,6 +1612,13 @@ a {
   color: #4ecdc4;
   font-size: 24px;
   font-weight: 700;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.const__next:hover {
+  color: #00ffed;
 }
 
 /*-----------------SECTION-CONTACTS--------------------*/
@@ -2100,13 +2142,24 @@ a {
   display: block;
 }
 
+.manufacturers__item:hover .manufacturers__item-block {
+  border: 1px solid transparent;
+}
+
+.manufacturers__item:hover .manufacturers__item-title {
+  color: #4ecdc4;
+}
+
 .manufacturers__item-block {
   display: block;
   width: 100%;
   position: relative;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #f1f1f1;
   background-color: #ffffff;
   margin-bottom: 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .manufacturers__item-img {
@@ -2137,6 +2190,9 @@ a {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 /*-----------------SECTION-MANUFACTURER--------------------*/
@@ -2286,6 +2342,13 @@ a {
   align-items: center;
   color: #4ecdc4;
   font-weight: 700;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.ings__item-link:hover {
+  color: #00ffed;
 }
 
 .ings__item-svg {
@@ -2313,9 +2376,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2343,10 +2406,6 @@ a {
 
 .product__chars {
   margin-bottom: 20px;
-}
-
-.product__app {
-  margin-bottom: 30px;
 }
 
 .product__add {
@@ -2417,6 +2476,13 @@ a {
 .char__link {
   color: #4ecdc4;
   font-weight: 700;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.char__link:hover {
+  color: #00ffed;
 }
 
 .app__top {
@@ -2442,6 +2508,28 @@ a {
   color: #999999;
   font-size: 14px;
   letter-spacing: 2.8px;
+  position: relative;
+}
+
+.app__more.open .app__more-svg {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.app__more-svg {
+  position: absolute;
+  left: calc(100% + 30px);
+  top: 50%;
+  margin-top: -5.5px;
+  width: 11px;
+  fill: #4ecdc4;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .app__list {
@@ -2458,6 +2546,11 @@ a {
   justify-content: space-between;
 }
 
+.app__list-hidden {
+  width: 100%;
+  display: none;
+}
+
 .app__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2471,6 +2564,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 .app__img {
@@ -2549,6 +2643,13 @@ a {
 .footer__item {
   display: block;
   margin-bottom: 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.footer__item:hover {
+  color: #4ecdc4;
 }
 
 .footer__item:last-child {

@@ -101,7 +101,21 @@ $(function () {
     $('.products__list2').css({
         height : productsHeight
     });
-    // debugger;
+
+    $('.app__more').on('click', function (e) {
+        var button = $(this),
+            buttonText = button.find('.app__more-text'),
+            text = 'Показать все категории',
+            hidden = $('.app__list-hidden');
+
+        if (!button.hasClass('open')) {
+            text = 'Скрыть категории';
+        }
+        button.toggleClass('open');
+        hidden.slideToggle(300);
+        buttonText.text(text);
+
+    });
 
     /*END OTHER*/
 });

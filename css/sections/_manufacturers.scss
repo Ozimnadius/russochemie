@@ -120,15 +120,23 @@
     margin-bottom: 35px;
     display: block;
 
+    &:hover {
+      .manufacturers__item-block {
+        border: 1px solid transparent;
+      }
+      .manufacturers__item-title {
+        color: $Medium-turquoise;
+      }
+    }
+
     &-block{
       display: block;
       width: 100%;
       position: relative;
-
-      border: 1px solid $Ash-grey;
+      border: 1px solid #f1f1f1;
       background-color: $bg;
-
       margin-bottom: 20px;
+      transition: .3s;
     }
 
     &-img {
@@ -153,6 +161,7 @@
       font-size: 18px;
       font-weight: 700;
       text-align: center;
+      transition: .3s;
     }
 
   }
