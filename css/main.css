@@ -2709,6 +2709,7 @@ a {
 
 .career__content {
   margin-bottom: 35px;
+  line-height: 1.75;
 }
 
 .vacancies .row {
@@ -2777,6 +2778,10 @@ a {
   font-weight: 600;
 }
 
+.vacancy__li {
+  font-size: 14px;
+}
+
 .vacancy__hidden {
   display: none;
   margin-bottom: 25px;
@@ -2834,10 +2839,6 @@ a {
 }
 
 /*-----------------SECTION-NEWS--------------------*/
-.news {
-  padding-bottom: 30px;
-}
-
 .news__list {
   position: relative;
 }
@@ -2909,7 +2910,7 @@ a {
 .news__text {
   font-size: 14px;
   line-height: 1.42;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .news__link {
@@ -2951,7 +2952,12 @@ a {
 
 /*-----------------SECTION-ABOUT--------------------*/
 .about {
-  padding: 50px 0;
+  padding-top: 50px;
+}
+
+.about__content {
+  line-height: 1.75;
+  margin-bottom: 50px;
 }
 
 .about__photos {
@@ -3035,6 +3041,7 @@ a {
   margin-right: 15px;
   word-wrap: break-word;
   width: calc(50% - 30px);
+  padding-top: 20px;
 }
 
 .review__title {

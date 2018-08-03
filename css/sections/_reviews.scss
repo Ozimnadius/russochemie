@@ -27,6 +27,7 @@
   &__desc {
     @include col;
     @include size(12);
+    padding-top: 20px;
   }
 
   &__title {
