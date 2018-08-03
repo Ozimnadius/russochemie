@@ -2,7 +2,7 @@ $(function () {
 
     /*SWIPER*/
 
-    var swiper = new Swiper ('.swiper__container', {
+    var swiper = new Swiper('.swiper__container', {
         direction: 'horizontal',
         speed: 500,
         mousewheel: true,
@@ -67,7 +67,6 @@ $(function () {
         }
 
 
-
     });
 
     $('.jsProductsMore').on('click', function (e) {
@@ -78,7 +77,9 @@ $(function () {
 
         productsButton.removeClass('active');
         setTimeout(function () {
-            productsMore.slideDown(500, function () {productsMoreButton.addClass('active')});
+            productsMore.slideDown(500, function () {
+                productsMoreButton.addClass('active')
+            });
         }, 300);
 
     });
@@ -91,15 +92,17 @@ $(function () {
 
         productsMoreButton.removeClass('active');
         setTimeout(function () {
-            productsMore.slideUp(500, function () {productsButton.addClass('active')});
+            productsMore.slideUp(500, function () {
+                productsButton.addClass('active')
+            });
         }, 300);
 
     });
 
-    var productsHeight = $('.products__list').innerHeight()-110;
+    var productsHeight = $('.products__list').innerHeight() - 110;
 
     $('.products__list2').css({
-        height : productsHeight
+        height: productsHeight
     });
 
     $('.app__more').on('click', function (e) {
@@ -117,5 +120,36 @@ $(function () {
 
     });
 
+    $('.vacancy__more').on('click', function (e) {
+        var button = $(this),
+            vacancy = button.closest('.vacancy'),
+            hidden = vacancy.find('.vacancy__hidden');
+
+        button.toggleClass('open');
+        hidden.slideToggle(500);
+    });
+
+    function setHeightNews () {
+        var maxHeight = 0;
+
+        $('.news__title').each(function (indx, elem) {
+            var item = $(elem),
+                height = item.outerHeight();
+            if (maxHeight < outerHeight) {
+                maxHeight = height;
+            }
+        });
+
+        $('.news__title').outerHeight(maxHeight);
+    }
+    setHeightNews();
+
+    $('.review__button').on('click', function () {
+        var button = $(this),
+            review = button.closest('.review'),
+            link = review.find('.review__img-link');
+
+        link.trigger('click');
+    });
     /*END OTHER*/
 });

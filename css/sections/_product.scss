@@ -39,11 +39,20 @@
     color: $Medium-turquoise;
     font-size: 18px;
     font-weight: 700;
+    transition: .3s;
 
     &-svg {
       width: 34px;
       fill: $Medium-turquoise;
       margin-left: 15px;
+      transition: .3s;
+    }
+
+    &:hover {
+      color: #00ffed;
+      svg {
+        fill: #00ffed;
+      }
     }
   }
   /* END right */
