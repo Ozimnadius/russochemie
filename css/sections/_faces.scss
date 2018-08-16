@@ -1,0 +1,150 @@
+.faces {
+  padding: 100px 0;
+
+  &__items {
+    position: relative;
+  }
+
+  &__item {
+    @include col;
+    @include size(8);
+
+    &.active {
+      .faces__item-top {
+        &:before, &:after {
+          display: block;
+        }
+      }
+      .faces__item-bottom {
+        opacity: 1;
+      }
+    }
+
+    &-top {
+      position: relative;
+      z-index: 20;
+
+      &:before {
+        display: none;
+        content: '';
+        position: absolute;
+        top: calc(100% + 13px);
+        left: 50%;
+        margin-left: -13px;
+        transform: rotate(-45deg);
+        width: 26px;
+        height: 26px;
+        background-color: $Snow;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      &:after {
+        display: none;
+        content: '';
+        position: absolute;
+        top: calc(100% + 26px);
+        left: 50%;
+        margin-left: -26px;
+        width: 52px;
+        height: 26px;
+        background-color: $Snow;
+      }
+    }
+
+    &-title {
+      color: $Taupe;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 30px;
+      cursor: pointer;
+    }
+
+    &-pic {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0);
+      transition: .3s;
+      &:hover {
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &-subtitle {
+      margin-top: 25px;
+      color: $Taupe;
+      text-align: center;
+      position: relative;
+      padding-top: 8px;
+
+      &:before {
+       content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -30px;
+        width: 60px;
+        height: 3px;
+        background-color: $Medium-turquoise;
+      }
+    }
+
+    &-bottom {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      z-index: 10;
+      top: calc(100% + 26px);
+
+      left: 0;
+      right: 0;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+      background-color: $Snow;
+      padding: 50px 95px;
+      flex-direction: column;
+
+    }
+
+    &-content {
+      position: relative;
+      margin-bottom: 45px;
+      color: $Taupe;
+      line-height: 1.375;
+
+      &:before {
+        position: absolute;
+        top: -25px;
+        left: -39px;
+        content: '“';
+        font-size: 72px;
+      }
+      &:after {
+        position: absolute;
+        bottom: -70px;
+        right: -10px;
+        content: '”';
+        font-size: 72px;
+      }
+    }
+
+
+    &-right {
+      align-self: flex-end;
+    }
+    &-name {
+      color: $Taupe;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+    &-prof {
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+}

@@ -151,5 +151,33 @@ $(function () {
 
         link.trigger('click');
     });
+
+    $('.faces__item').on('click', function (e) {
+        var item = $(this),
+            items = $('.faces__item');
+
+        items.removeClass('active');
+        item.addClass('active');
+    });
+
+    setFacesHeight();
+    function setFacesHeight() {
+        var facesHeight = 0;
+        $('.faces__item').each(function (indx, elem) {
+            var item = $(elem),
+                bottom = item.find('.faces__item-bottom'),
+                height = bottom.outerHeight();
+
+            if (facesHeight < height) {
+                facesHeight = height;
+            }
+
+        });
+
+        facesHeight+=30;
+
+        $('.faces__fake').height(facesHeight);
+    }
+
     /*END OTHER*/
 });

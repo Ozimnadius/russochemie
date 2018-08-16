@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-----------------SECTION-MIXINS--------------------*/
 /*------------------------SECTION-FONTS----------------*/
 @font-face {
@@ -40,6 +41,13 @@
   src: url("../fonts/subset-Exo2-Regular.woff2") format("woff2"), url("../fonts/subset-Exo2-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url("../fonts/subset-Exo2-Italic.woff2") format("woff2"), url("../fonts/subset-Exo2-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
 }
 
 /*------------------------SECTION-SMART-GRID----------------*/
@@ -3071,6 +3079,180 @@ a {
 .review__button-img {
   height: 11px;
   margin-left: 15px;
+}
+
+/*-----------------SECTION-FACES--------------------*/
+.faces {
+  padding: 100px 0;
+}
+
+.faces__items {
+  position: relative;
+}
+
+.faces__item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(33.33333% - 30px);
+}
+
+.faces__item.active .faces__item-top:before, .faces__item.active .faces__item-top:after {
+  display: block;
+}
+
+.faces__item.active .faces__item-bottom {
+  opacity: 1;
+}
+
+.faces__item-top {
+  position: relative;
+  z-index: 20;
+}
+
+.faces__item-top:before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: calc(100% + 13px);
+  left: 50%;
+  margin-left: -13px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 26px;
+  height: 26px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.faces__item-top:after {
+  display: none;
+  content: '';
+  position: absolute;
+  top: calc(100% + 26px);
+  left: 50%;
+  margin-left: -26px;
+  width: 52px;
+  height: 26px;
+  background-color: #fafafa;
+}
+
+.faces__item-title {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.faces__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.faces__item-pic {
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.faces__item-pic:hover {
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.faces__item-subtitle {
+  margin-top: 25px;
+  color: #333333;
+  text-align: center;
+  position: relative;
+  padding-top: 8px;
+}
+
+.faces__item-subtitle:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 3px;
+  background-color: #4ecdc4;
+}
+
+.faces__item-bottom {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 26px);
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  background-color: #fafafa;
+  padding: 50px 95px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.faces__item-content {
+  position: relative;
+  margin-bottom: 45px;
+  color: #333333;
+  line-height: 1.375;
+}
+
+.faces__item-content:before {
+  position: absolute;
+  top: -25px;
+  left: -39px;
+  content: '“';
+  font-size: 72px;
+}
+
+.faces__item-content:after {
+  position: absolute;
+  bottom: -70px;
+  right: -10px;
+  content: '”';
+  font-size: 72px;
+}
+
+.faces__item-right {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.faces__item-name {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.faces__item-prof {
+  font-weight: 100;
+  font-style: italic;
 }
 
 /*------------------------SECTION-FOOTER---------------------*/
