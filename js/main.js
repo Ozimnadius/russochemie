@@ -179,5 +179,67 @@ $(function () {
         $('.faces__fake').height(facesHeight);
     }
 
+    $('.jsSwitch').on('click', function (e) {
+        var sw = $(this),
+            id = sw.data('id'),
+            switchesParent = sw.closest('.jsSwitches'),
+            switchesParentId = switchesParent.data('id'),
+            tabsParent = $('.jsTabs[data-id='+switchesParentId+']'),
+            tab = tabsParent.find('.jsTab[data-id='+id+']'),
+            sws = switchesParent.find('.jsSwitch').not(sw),
+            tabs = tabsParent.find('.jsTab[data-parent='+switchesParentId+']').not(tab);
+
+        sws.removeClass('active');
+        tabs.removeClass('active');
+        sw.addClass('active');
+        tab.addClass('active');
+    });
+
+    $('.order__more').on('click', function (e) {
+        var button = $(this),
+            order = button.closest('.order'),
+            hidden = order.find('.order__list-hidden');
+
+
+
+        hidden.slideToggle(300, function () {
+            if (button.hasClass('active')) {
+                button.text('Скрыть позиции')
+            } else {
+                button.text('Показать все позиции')
+            }
+        });
+        button.toggleClass('active');
+
+    });
+
+    // setTabsHeight();
+    // function setTabsHeight() {
+    //     $('.jsTabs').each(function (indx, elem) {
+    //         var tabsHeight = 0,
+    //             tabs = $(elem);
+    //
+    //         tabs.find('.jsTab').each(function (indx, elem) {
+    //             var tab = $(elem),
+    //                 height = tab.outerHeight();
+    //
+    //             if (tabsHeight < height) {
+    //                 tabsHeight = height
+    //             }
+    //         });
+    //
+    //         console.log(tabsHeight);
+    //         tabs.css({
+    //             height: tabsHeight
+    //         });
+    //
+    //     });
+    // }
+
+    $('.ask__legend').on('click', function (e) {
+        $(this).toggleClass('active');
+        $(this).next().slideToggle(300);
+    });
+
     /*END OTHER*/
 });
